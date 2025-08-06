@@ -11,20 +11,27 @@ const Header = () => {
             <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
               <Wrench className="w-6 h-6 text-primary-foreground" />
             </div>
-            <span className="text-xl font-bold text-foreground">
-              EmergencyPro
-            </span>
+            <span className="text-xl font-bold text-foreground">Promptly</span>
           </div>
 
           {/* Navigation */}
           <nav className="hidden md:flex items-center gap-8">
-            <a href="#services" className="text-muted-foreground hover:text-foreground transition-colors">
+            <a
+              href="#services"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
               Serviços
             </a>
-            <a href="#como-funciona" className="text-muted-foreground hover:text-foreground transition-colors">
+            <a
+              href="#como-funciona"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
               Como Funciona
             </a>
-            <a href="#contato" className="text-muted-foreground hover:text-foreground transition-colors">
+            <a
+              href="#contato"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
               Contato
             </a>
           </nav>
