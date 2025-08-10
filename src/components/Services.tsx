@@ -1,27 +1,48 @@
 import { Clock, Shield, Users, Zap } from "lucide-react";
-import plumberIcon from "@/assets/plumber-icon.jpg";
-import locksmithIcon from "@/assets/locksmith-icon.jpg";
-import electricianIcon from "@/assets/electrician-icon.jpg";
+import cleaningIcon from "@/assets/cleaning-icon.jpg";
+import repairIcon from "@/assets/repair-icon.jpg";
+import paintingIcon from "@/assets/painting-icon.jpg";
+import itSupportIcon from "@/assets/it-support-icon.jpg";
+import movingIcon from "@/assets/moving-icon.jpg";
+import gardeningIcon from "@/assets/gardening-icon.jpg";
 
 const Services = () => {
   const services = [
     {
-      icon: plumberIcon,
+      icon: cleaningIcon,
+      title: "Limpeza",
+      description: "Limpeza residencial, comercial e pós-obra",
+      example: "Casa precisa de uma faxina? Profissionais prontos para ajudar"
+    },
+    {
+      icon: repairIcon,
       title: "Reparos Domésticos",
       description: "Encanadores, eletricistas, chaveiros e manutenção geral",
       example: "Problema em casa? Encontre o especialista certo em minutos"
     },
     {
-      icon: locksmithIcon,
-      title: "Serviços de Limpeza",
-      description: "Limpeza residencial, comercial e especializada",
-      example: "Precisa de uma faxina completa? Profissionais prontos para ajudar"
+      icon: paintingIcon,
+      title: "Pintura",
+      description: "Pintura residencial, comercial e decorativa",
+      example: "Quer renovar a casa? Pintores experientes à sua disposição"
     },
     {
-      icon: electricianIcon,
-      title: "Suporte Técnico",
-      description: "Assistência em TI, configuração e resolução de problemas",
+      icon: itSupportIcon,
+      title: "Suporte de TI",
+      description: "Assistência técnica, configuração e resolução de problemas",
       example: "Computador com problema? Suporte remoto disponível agora"
+    },
+    {
+      icon: movingIcon,
+      title: "Mudanças",
+      description: "Mudanças residenciais, comerciais e transporte",
+      example: "Vai se mudar? Equipe especializada cuida de tudo para você"
+    },
+    {
+      icon: gardeningIcon,
+      title: "Jardinagem",
+      description: "Cuidado de plantas, paisagismo e manutenção de jardins",
+      example: "Jardim precisa de cuidados? Jardineiros qualificados te ajudam"
     }
   ];
 
@@ -61,7 +82,7 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
           {services.map((service, index) => (
             <div key={index} className="bg-card rounded-2xl p-8 shadow-soft hover:shadow-medium transition-all duration-300 group">
               <div className="text-center space-y-6">
