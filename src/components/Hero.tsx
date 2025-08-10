@@ -11,16 +11,17 @@ const Hero = () => {
           <div className="space-y-8">
             <div className="space-y-6">
               <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold text-foreground leading-tight">
-                Prestadores de
-                <span className="text-primary block">Serviços Emergenciais</span>
+                O suporte que
+                <span className="text-primary block">você precisa</span>
                 na palma da sua mão
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground max-w-lg">
-                Encontre rapidamente chaveiros, encanadores, eletricistas e outros profissionais 
-                qualificados para resolver suas emergências 24/7.
+                Encontre rapidamente chaveiros, encanadores, eletricistas e
+                outros profissionais qualificados para resolver suas emergências
+                24/7.
               </p>
             </div>
-            
+
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="hero" size="xl" className="group">
                 Quero ser avisado
@@ -46,9 +47,9 @@ const Hero = () => {
           {/* Hero Image */}
           <div className="relative">
             <div className="relative z-10">
-              <img 
-                src={heroImage} 
-                alt="Prestadores de serviços emergenciais" 
+              <img
+                src={heroImage}
+                alt="Prestadores de serviços diversos"
                 className="w-full h-auto rounded-2xl shadow-strong"
               />
             </div>

@@ -11,11 +11,11 @@ const Footer = () => {
               <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
                 <Wrench className="w-6 h-6 text-primary-foreground" />
               </div>
-              <span className="text-xl font-bold">Promptly</span>
+              <span className="text-xl font-bold">QuebraGalho</span>
             </div>
             <p className="text-background/80 text-sm">
-              Conectando você aos melhores prestadores de serviços emergenciais
-              da sua região, 24 horas por dia.
+              Conectando você aos melhores prestadores de serviços diversos da
+              sua região, 24 horas por dia.
             </p>
           </div>
 
@@ -63,7 +63,7 @@ const Footer = () => {
             <div className="space-y-3 text-sm text-background/80">
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
-                <span>contato@Promptly.com</span>
+                <span>contato@QuebraGalho.com</span>
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4" />
@@ -78,7 +78,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-background/20 mt-12 pt-8 text-center text-sm text-background/60">
-          <p>&copy; 2024 Promptly. Todos os direitos reservados.</p>
+          <p>&copy; 2024 QuebraGalho. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>
