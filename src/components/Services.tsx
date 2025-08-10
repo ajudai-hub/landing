@@ -7,44 +7,44 @@ const Services = () => {
   const services = [
     {
       icon: plumberIcon,
-      title: "Encanadores",
-      description: "Vazamentos, entupimentos e emergências hidráulicas",
-      example: "Estourou um cano em casa? Encontre um encanador em minutos"
+      title: "Reparos Domésticos",
+      description: "Encanadores, eletricistas, chaveiros e manutenção geral",
+      example: "Problema em casa? Encontre o especialista certo em minutos"
     },
     {
       icon: locksmithIcon,
-      title: "Chaveiros",
-      description: "Abertura de portas, cópias de chaves e fechaduras",
-      example: "Ficou trancado do lado de fora? Ajuda está a caminho"
+      title: "Serviços de Limpeza",
+      description: "Limpeza residencial, comercial e especializada",
+      example: "Precisa de uma faxina completa? Profissionais prontos para ajudar"
     },
     {
       icon: electricianIcon,
-      title: "Eletricistas",
-      description: "Problemas elétricos, falta de energia e reparos",
-      example: "Falta de energia em casa? Resolva rapidamente"
+      title: "Suporte Técnico",
+      description: "Assistência em TI, configuração e resolução de problemas",
+      example: "Computador com problema? Suporte remoto disponível agora"
     }
   ];
 
   const features = [
     {
       icon: Clock,
-      title: "Resposta Rápida",
-      description: "Profissionais disponíveis 24 horas por dia, 7 dias por semana"
+      title: "Serviço Sob Demanda",
+      description: "Acesse profissionais quando precisar, sem agendamento prévio"
     },
     {
       icon: Shield,
-      title: "Profissionais Verificados",
-      description: "Todos os prestadores são verificados e possuem credenciais válidas"
+      title: "Profissionais Qualificados",
+      description: "Prestadores verificados e especializados em suas áreas"
     },
     {
       icon: Users,
-      title: "Avaliações Reais",
-      description: "Sistema de avaliações de clientes reais para garantir qualidade"
+      title: "Avaliações Transparentes",
+      description: "Sistema de feedback confiável para garantir qualidade"
     },
     {
       icon: Zap,
-      title: "Localização Precisa",
-      description: "Encontre o profissional mais próximo de você em tempo real"
+      title: "Conexão Inteligente",
+      description: "Algoritmo que conecta você ao profissional ideal para sua necessidade"
     }
   ];
 
@@ -54,10 +54,10 @@ const Services = () => {
         {/* Services Section */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-            Serviços de Emergência Disponíveis
+            Microserviços Sob Demanda
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Conectamos você aos melhores profissionais da sua região em questão de minutos
+            Uma plataforma completa que conecta você aos profissionais certos, quando você precisar
           </p>
         </div>
 
@@ -93,8 +93,11 @@ const Services = () => {
         {/* Features Section */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-            Por que escolher nossa plataforma?
+            Uma plataforma, infinitas possibilidades
           </h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Desde reparos domésticos até serviços especializados como tradução e suporte técnico
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

@@ -11,14 +11,13 @@ const Hero = () => {
           <div className="space-y-8">
             <div className="space-y-6">
               <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold text-foreground leading-tight">
-                O suporte que
-                <span className="text-primary block">você precisa</span>
-                na palma da sua mão
+                Qualquer serviço que
+                <span className="text-primary block">você precisar</span>
+                conectado em segundos
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground max-w-lg">
-                Encontre rapidamente chaveiros, encanadores, eletricistas e
-                outros profissionais qualificados para resolver suas emergências
-                24/7.
+                Plataforma que conecta você a profissionais especializados em microserviços: 
+                desde reparos domésticos até suporte técnico, limpeza e tradução.
               </p>
             </div>
 
@@ -35,11 +34,11 @@ const Hero = () => {
             <div className="flex items-center gap-8 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 bg-success rounded-full animate-pulse"></div>
-                <span>Disponível 24/7</span>
+                <span>Serviços sob demanda</span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
-                <span>Profissionais verificados</span>
+                <span>Profissionais qualificados</span>
               </div>
             </div>
           </div>

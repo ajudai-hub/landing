@@ -85,11 +85,10 @@ const EmailCapture = () => {
             <div className="text-center mb-8">
               <Mail className="w-16 h-16 text-primary mx-auto mb-6" />
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                Seja o primeiro a saber
+                Seja o primeiro a acessar nossa plataforma
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Cadastre seu e-mail e receba uma notificação exclusiva assim que 
-                nossa plataforma estiver disponível para uso.
+                Cadastre-se para receber acesso antecipado à plataforma que vai revolucionar como você contrata microserviços.
               </p>
             </div>
 
@@ -122,12 +121,12 @@ const EmailCapture = () => {
 
             <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
               <div className="space-y-2">
-                <div className="text-2xl font-bold text-primary">24/7</div>
-                <p className="text-sm text-muted-foreground">Disponibilidade</p>
+                <div className="text-2xl font-bold text-primary">+50</div>
+                <p className="text-sm text-muted-foreground">Tipos de serviços</p>
               </div>
               <div className="space-y-2">
                 <div className="text-2xl font-bold text-primary">100%</div>
-                <p className="text-sm text-muted-foreground">Verificados</p>
+                <p className="text-sm text-muted-foreground">Qualificados</p>
               </div>
               <div className="space-y-2">
                 <div className="text-2xl font-bold text-primary">5★</div>
