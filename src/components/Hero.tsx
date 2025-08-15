@@ -11,13 +11,13 @@ const Hero = () => {
           <div className="space-y-8">
             <div className="space-y-6">
               <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold text-foreground leading-tight">
-                Qualquer serviço que
-                <span className="text-primary block">você precisar</span>
-                conectado em segundos
+                O serviço que
+                <span className="text-primary block">você precisa</span>
+                na palma da sua mão
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground max-w-lg">
-                Plataforma que conecta você a profissionais especializados em microserviços: 
-                desde reparos domésticos até suporte técnico, limpeza e tradução.
+                A plataforma que conecta você a profissionais qualificados para
+                resolver suas demandas do dia a dia.
               </p>
             </div>
 
@@ -34,7 +34,7 @@ const Hero = () => {
             <div className="flex items-center gap-8 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 bg-success rounded-full animate-pulse"></div>
-                <span>Serviços sob demanda</span>
+                <span>Atendimento sob demanda</span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
@@ -46,11 +46,11 @@ const Hero = () => {
           {/* Hero Image */}
           <div className="relative">
             <div className="relative z-10">
-              <img
+              {/* <img
                 src={heroImage}
                 alt="Prestadores de serviços diversos"
                 className="w-full h-auto rounded-2xl shadow-strong"
-              />
+              /> */}
             </div>
             <div className="absolute -inset-4 bg-gradient-primary rounded-2xl opacity-20 blur-xl"></div>
           </div>

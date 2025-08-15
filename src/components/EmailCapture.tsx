@@ -13,7 +13,7 @@ const EmailCapture = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!email || !email.includes("@")) {
       toast({
         title: "E-mail inválido",
@@ -67,7 +67,8 @@ const EmailCapture = () => {
               </p>
               <div className="bg-muted rounded-lg p-6">
                 <p className="text-sm text-muted-foreground">
-                  💌 E-mail de confirmação enviado para: <strong>{email}</strong>
+                  💌 E-mail de confirmação enviado para:{" "}
+                  <strong>{email}</strong>
                 </p>
               </div>
             </CardContent>
@@ -78,7 +79,10 @@ const EmailCapture = () => {
   }
 
   return (
-    <section className="py-20 px-4 bg-gradient-section">
+    <section
+      id="formulario"
+      className="py-20 px-4 bg-gradient-section scroll-mt-20"
+    >
       <div className="container mx-auto max-w-4xl">
         <Card className="shadow-strong">
           <CardContent className="p-12">
@@ -88,7 +92,8 @@ const EmailCapture = () => {
                 Seja o primeiro a acessar nossa plataforma
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Cadastre-se para receber acesso antecipado à plataforma que vai revolucionar como você contrata microserviços.
+                Cadastre-se para receber acesso antecipado à plataforma que vai
+                revolucionar como você busca por profissionais qualificados.
               </p>
             </div>
 
@@ -102,9 +107,9 @@ const EmailCapture = () => {
                   className="flex-1"
                   required
                 />
-                <Button 
-                  type="submit" 
-                  variant="hero" 
+                <Button
+                  type="submit"
+                  variant="hero"
                   size="lg"
                   disabled={isSubmitting}
                 >
@@ -117,21 +122,6 @@ const EmailCapture = () => {
               <p className="text-sm text-muted-foreground">
                 🔒 Seus dados estão seguros. Não enviamos spam.
               </p>
-            </div>
-
-            <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-              <div className="space-y-2">
-                <div className="text-2xl font-bold text-primary">+50</div>
-                <p className="text-sm text-muted-foreground">Tipos de serviços</p>
-              </div>
-              <div className="space-y-2">
-                <div className="text-2xl font-bold text-primary">100%</div>
-                <p className="text-sm text-muted-foreground">Qualificados</p>
-              </div>
-              <div className="space-y-2">
-                <div className="text-2xl font-bold text-primary">5★</div>
-                <p className="text-sm text-muted-foreground">Avaliação média</p>
-              </div>
             </div>
           </CardContent>
         </Card>

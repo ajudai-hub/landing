@@ -8,12 +8,10 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-              <Wrench className="w-6 h-6 text-primary-foreground" />
-            </div>
-            <span className="text-xl font-bold text-foreground">
-              QuebraGalho
-            </span>
+            {/* <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center"> */}
+            {/* <Wrench className="w-6 h-6 text-primary-foreground" /> */}
+            {/* </div> */}
+            <span className="text-xl font-bold text-foreground">ajudaí</span>
           </div>
 
           {/* Navigation */}
@@ -39,8 +37,9 @@ const Header = () => {
           </nav>
 
           {/* CTA Button */}
-          <Button variant="default" size="sm">
-            Quero ser avisado
+          {/* CTA Button */}
+          <Button variant="default" size="sm" asChild>
+            <a href="#formulario">Quero ser avisado</a>
           </Button>
         </div>
       </div>
