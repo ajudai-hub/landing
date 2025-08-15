@@ -14,7 +14,7 @@ const EmailCapture = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (!email || !email.includes("@")) {
+    if (!email || !email.includes("@") || !email.includes(".")) {
       toast({
         title: "E-mail inválido",
         description: "Por favor, insira um e-mail válido.",
@@ -26,14 +26,49 @@ const EmailCapture = () => {
     setIsSubmitting(true);
 
     try {
-      // Simular envio para endpoint (substitua pela sua API real)
-      await fetch("/api/newsletter", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email }),
-      });
+      const response = await fetch(
+        `${import.meta.env.VITE_API_BASE_URL}/early-adopter`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ email }),
+        }
+      );
+
+      if (!response.ok) {
+        const errorData = await response.json().catch(() => ({}));
+
+        if (response.status === 409) {
+          toast({
+            title: "E-mail já cadastrado",
+            description:
+              "Este e-mail já está na nossa lista de espera. Você será notificado quando o app estiver disponível.",
+            variant: "destructive",
+          });
+          return;
+        }
+
+        if (response.status === 400) {
+          toast({
+            title: "Dados inválidos",
+            description:
+              errorData.message || "Por favor, verifique o e-mail informado.",
+            variant: "destructive",
+          });
+          return;
+        }
+
+        toast({
+          title: "Erro no servidor",
+          description: `Erro ${response.status}: ${
+            errorData.message || "Tente novamente em alguns instantes."
+          }`,
+          variant: "destructive",
+        });
+        return;
+      }
 
       setIsSubmitted(true);
       toast({
@@ -42,8 +77,9 @@ const EmailCapture = () => {
       });
     } catch (error) {
       toast({
-        title: "Erro no cadastro",
-        description: "Tente novamente em alguns instantes.",
+        title: "Erro de conexão",
+        description:
+          "Não foi possível conectar ao servidor. Verifique sua conexão e tente novamente.",
         variant: "destructive",
       });
     } finally {

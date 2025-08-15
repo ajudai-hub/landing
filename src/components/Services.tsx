@@ -75,7 +75,7 @@ const Services = () => {
     <section className="py-20 px-4">
       <div className="container mx-auto max-w-7xl">
         {/* Services Section */}
-        <div id="services" className="text-center mb-16 scroll-mt-20">
+        <div id="servicos" className="text-center mb-16 scroll-mt-20">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
             Atendimento no seu tempo
           </h2>
