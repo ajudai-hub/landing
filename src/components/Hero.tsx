@@ -22,12 +22,14 @@ const Hero = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="hero" size="xl" className="group">
-                Quero ser avisado
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              <Button variant="hero" size="xl" className="group" asChild>
+                <a href="#formulario">
+                  Quero ser avisado
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </a>
               </Button>
-              <Button variant="outline" size="xl">
-                Como funciona?
+              <Button variant="outline" size="xl" asChild>
+                <a href="#como-funciona">Como funciona?</a>
               </Button>
             </div>
 
